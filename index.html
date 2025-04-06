@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega de Medicamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Entrega de Medicamentos</h1>
+        <div>
+            <label for="existenciasMed1">Existencias Medicamento 1:</label>
+            <input type="number" id="existenciasMed1" placeholder="Ingrese existencias" />
+        </div>
+        <div>
+            <label for="existenciasMed2">Existencias Medicamento 2:</label>
+            <input type="number" id="existenciasMed2" placeholder="Ingrese existencias" />
+        </div>
+        <button id="iniciarPrograma">Iniciar Programa</button>
+
+        <div id="formPaciente" style="display: none;">
+            <h2>Atender Paciente</h2>
+            <div>
+                <label for="preSistolica">Presión Sistólica:</label>
+                <input type="number" id="preSistolica" placeholder="Ingrese presión sistólica" />
+            </div>
+            <div>
+                <label for="preDiastolica">Presión Diastólica:</label>
+                <input type="number" id="preDiastolica" placeholder="Ingrese presión diastólica" />
+            </div>
+            <button id="evaluarPaciente">Evaluar Paciente</button>
+        </div>
+
+        <div id="resultado" style="display: none;">
+            <h3>Resultado</h3>
+            <p id="mensajeResultado"></p>
+            <button id="atenderOtro">Atender Otro Paciente</button>
+            <button id="finalizar">Finalizar Programa</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
