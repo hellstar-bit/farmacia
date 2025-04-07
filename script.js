@@ -55,7 +55,7 @@ document.getElementById("evaluarPaciente").addEventListener("click", () => {
         mensaje = "El paciente presenta HTAG2. Se entregan 18 dosis de medicamento 1.";
         pacientes_med1 += 1;
         existencias_meds.Existencias_med1 -= 18;
-    } else if (Pre_sistolica >= 246 || Pre_diastolica >= 169) {
+    } else if (Pre_sistolica >= 246 && Pre_diastolica >= 169) {
         mensaje = "El paciente presenta HTAG3. Se entregan 35 dosis de medicamento 1.";
         pacientes_med1 += 1;
         existencias_meds.Existencias_med1 -= 35;
